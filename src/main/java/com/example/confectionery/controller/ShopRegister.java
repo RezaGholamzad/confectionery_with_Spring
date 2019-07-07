@@ -50,13 +50,13 @@ public class ShopRegister {
 			//set BusinessLicenseImageAddress
 			part = request.getPart("businessLicenseImage");
 			String fileName = shop.getBusinessLicense()+".jpg";
-			String savePath = "D:/IdeaProjects/projects java/image/businessLicenseImages/" + fileName;
+			String savePath = "C:/Users/Reza/IdeaProjects/image/businessLicenseImages/" + fileName;
 			part.write(savePath + File.separator);
 			shop.setBusinessLicenseImageAddress(savePath.substring(savePath.indexOf("/image")));
 
 			//set ShopImageAddress
 			part = request.getPart("shopImage");
-			savePath = "D:/IdeaProjects/projects java/image/shopImage/" + fileName;
+			savePath = "C:/Users/Reza/IdeaProjects/image/shopImage/" + fileName;
 			part.write(savePath + File.separator);
 			shop.setShopImageAddress(savePath.substring(savePath.indexOf("/image")));
 

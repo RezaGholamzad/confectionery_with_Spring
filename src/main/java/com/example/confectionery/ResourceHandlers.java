@@ -15,7 +15,7 @@ public class ResourceHandlers implements WebMvcConfigurer {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry
 				.addResourceHandler("/**")
-				.addResourceLocations("classpath:/static/","file:///D:/IdeaProjects/projects java/");
+				.addResourceLocations("classpath:/static/","file:///C:/Users/Reza/IdeaProjects/");
 //		registry
 //				.addResourceHandler("/image/")
 //				.addResourceLocations("file:///D:/IdeaProjects/projects java/");

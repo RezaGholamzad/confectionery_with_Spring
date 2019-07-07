@@ -88,7 +88,7 @@ public class ShopVerification {
 				response.setContentType("image/png");
 				response.setHeader("Content-Disposition", "attachment; filename=\""+ shop.getEmail() +".png\"");
 
-				return new InputStreamResource(new FileInputStream("D:\\IdeaProjects\\projects java" + shop.getShopImageAddress()));
+				return new InputStreamResource(new FileInputStream("C:\\Users\\Reza\\IdeaProjects" + shop.getShopImageAddress()));
 			}
 		}
 		return null;
@@ -109,7 +109,7 @@ public class ShopVerification {
 				response.setContentType("image/png");
 				response.setHeader("Content-Disposition", "attachment; filename=\""+ shop.getBusinessLicense() +".png\"");
 
-				return new InputStreamResource(new FileInputStream("D:\\IdeaProjects\\projects java" + shop.getBusinessLicenseImageAddress()));
+				return new InputStreamResource(new FileInputStream("C:\\Users\\Reza\\IdeaProjects" + shop.getBusinessLicenseImageAddress()));
 
 			}
 		}
